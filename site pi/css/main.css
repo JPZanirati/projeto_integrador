@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Paaji 2", cursive;
+}
+/* #region cabecalho*/
+.cabecalho {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(102, 102, 126);
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  list-style-type: none;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: rgb(132, 139, 196);
+}
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(173, 208, 240);
+}
+.pesquisa input {
+  width: 65%;
+  height: 30px;
+  border: solid 3px rgb(132, 139, 196);
+  background-color: white;
+  font-family: "Baloo Paaji 2", cursive;
+}
+.pesquisa button {
+  width: 30%;
+  height: 30px;
+  border: solid 3px rgb(132, 139, 196);
+  background-color: rgb(132, 139, 196);
+  color: rgb(173, 208, 240);
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+/* #endregion cabecalho*/
+
+/*#region Slide*/
+.border {
+  margin-top: 10px;
+
+  padding: 20%;
+  position: relative;
+  border-width: 1px;
+  background-color: rgb(102, 102, 126);
+}
+.slidershow {
+  width: 960px;
+  height: 350px;
+  overflow: hidden;
+  position: absolute;
+  top: 400px;
+  left: 300px;
+}
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navigation {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ccc;
+  margin: 0 10px;
+}
+.bar:hover {
+  background: #fff;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img {
+  width: 960px;
+  height: 350px;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+#r5:checked ~ .s1 {
+  margin-left: -80%;
+}
+/*#endregion Slide*/
+
+/*#region Blocos_3motivos*/
+
+.Blocos_3motivos {
+  background-color: rgb(178, 178, 238);
+  width: 100%;
+  height: 300px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 10px;
+}
+
+.Blocos_3motivos div {
+  background-color: rgb(102, 102, 126);
+  flex-basis: 33.3%;
+  height: 95%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 20px;
+  color: rgb(173, 208, 240);
+}
+
+.Blocos_3motivos div h1 {
+  padding: 6px;
+  display: flex;
+}
+
+.Blocos_3motivos div p {
+  padding: 10px;
+  display: flex;
+}
+/*#endregion Blocos_3motivos*/
+
+/*#region Blocos_Cursos*/
+.Blocos_Cursos {
+  background-color: rgb(102, 102, 126);
+  width: 100%;
+  height: 320px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Blocos_Cursos div {
+  background-color: rgb(178, 178, 238);
+  border-radius: 10px;
+}
+
+.Blocos_Cursos div > h1 {
+  color: #233579;
+  display: flex;
+  justify-content: center;
+}
+
+.Blocos_Cursos img {
+  margin-left: 5px;
+  width: 95%;
+  border-radius: 3px;
+}
+
+/*#endregion Blocos_Cursos*/
+
+/*#region contato*/
+
+.contato {
+  background-color: rgb(178, 178, 238);
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contato h1 {
+  color: #233579;
+  margin-left: 100px;
+}
+
+.contato div {
+  padding-bottom: 10px;
+  margin-left: 100px;
+  border-radius: 5px;
+}
+
+.contato input {
+  padding-left: 3px;
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+.contato textarea {
+  margin-left: 100px;
+  border-radius: 5px;
+  padding-left: 3px;
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+.contato button {
+  padding: 2px;
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+/*#endregion*/
+
+/*#region rodapé*/
+.rodape {
+  background-color: rgb(102, 102, 126);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rodape div h3 {
+  color: rgb(149 185 218);
+  padding-top: 5px;
+}
+
+.rodape div ul {
+  list-style-type: none;
+}
+
+.rodape div ul li {
+  padding: 1px;
+}
+
+.rodape div ul li a {
+  color: #233579;
+}
+
+/*#endregion*/

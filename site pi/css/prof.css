@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.container {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  background-color: rgb(102, 102, 126);
+  text-align: center;
+  font-size: 30px;
+  color: rgb(173, 208, 240);
+}
+
+.conteudo h1 {
+  padding-top: 100px;
+}
+
+.fundo {
+  background-color: rgb(132, 139, 196);
+  width: 100%;
+  height: 100vh;
+  padding: 5px;
+  display: flex;
+}
+
+.foto {
+  background-color: rgb(132, 139, 196);
+  flex-basis: 55%;
+  height: 90%;
+  margin: 10px;
+}
+
+.foto img {
+  max-width: 72%;
+  border-radius: 10px;
+  display: flex;
+}
+
+.textos {
+  background-color: rgb(180, 180, 248);
+  flex-basis: 45%;
+  height: 85%;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 30px;
+  float: left;
+  font-size: 20pt;
+}
+
+.rodape {
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+  width: 100%;
+}
+
+.textos input {
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+.textos button {
+  font-family: "Baloo Paaji 2", cursive;
+}
